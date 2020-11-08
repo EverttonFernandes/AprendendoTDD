@@ -16,7 +16,6 @@ public class PrimeiroTeste {
     public void setUp(){
         calculadora = new Calculadora();
     }
-
     /**
      * Executa cenario de teste para somar dois numeros.
      */
@@ -42,7 +41,7 @@ public class PrimeiroTeste {
     }
 
     /**
-     * Executa cenario de teste para multiplicar dois numeros.
+     * * Executa cenario de teste para multiplicar dois numeros.
      */
     @Test
     public void deveMultiplicarDoisNumero(){
