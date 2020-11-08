@@ -1,6 +1,6 @@
 package com.designapi;
 
-import org.junit.Assert;
+import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
 public class PrimeiroTeste {
@@ -12,6 +12,6 @@ public class PrimeiroTeste {
         // execucao
         int resultado = primeiroNumero + segundoNumero;
         // verificacoes
-        Assert.assertEquals(15, resultado);
+        Assertions.assertThat(resultado).isBetween(14,16);
     }
 }
