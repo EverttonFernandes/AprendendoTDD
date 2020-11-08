@@ -9,23 +9,32 @@ public class PrimeiroTeste {
     Calculadora calculadora;
     int numero1 = 10, numero2 = 5;
 
+    /**
+     * Metodo responsavel por inicializar a classe calculadora
+     */
     @Before
     public void setUp(){
         calculadora = new Calculadora();
     }
 
+    /**
+     * Executa cenario de teste para somar dois numeros.
+     */
     @Test
     public void deveSomarDoisNumero () {
         Assertions.assertThat(new Calculadora().somarNumero(numero1, numero2)).isBetween(14,16);
     }
 
+    /**
+     * Executa cenario de teste para nao aceitar a soma de numeros negativos
+     */
     @Test(expected = RuntimeException.class)
     public void naoDeveSomarNumerosNegativos(){
         calculadora.somarNumero(-10,5);
     }
 
     /**
-     * Executa cenario de teste ja com a sua execucao.
+     * Executa cenario de teste para subtrair dois numeros.
      */
     @Test
     public void deveSubtrairDoisNumero(){
@@ -33,7 +42,7 @@ public class PrimeiroTeste {
     }
 
     /**
-     * Executa cenario de teste ja com a sua execucao.
+     * Executa cenario de teste para multiplicar dois numeros.
      */
     @Test
     public void deveMultiplicarDoisNumero(){
@@ -41,7 +50,7 @@ public class PrimeiroTeste {
     }
 
     /**
-     * Executa cenario de teste ja com a sua execucao.
+     * Executa cenario de teste com a divisao de dois numeros.
      */
     @Test
     public void deveDividirDoisNumero(){
@@ -49,7 +58,7 @@ public class PrimeiroTeste {
     }
 
     /**
-     * Executa cenario de teste ja com a sua execucao.
+     * Executa cenario de teste que nao aceita divisao de numeros por zero.
      */
     @Test(expected = ArithmeticException.class)
     public void naoDeveDividirPorZero(){
