@@ -11,3 +11,7 @@ c
 3src/test/java/com/designapi/CadastroPessoaTest.java,f/3/f35849d5b2985763d3596efd7d84463dccf5e662
 f
 6src/main/java/com/designapi/PessoaSemNotException.java,5/4/54038b507b03188f8bad36bb123ed4f2964a4c71
+h
+8src/main/java/com/designapi/CadastroVazioExcepetion.java,6/0/604a44d4bb2ca537a24d0640f0d2d736566d03d8
+^
+.src/test/java/com/designapi/MockitoTestes.java,b/4/b41f6028187745e2fc52d2819781dce9edb767c2
